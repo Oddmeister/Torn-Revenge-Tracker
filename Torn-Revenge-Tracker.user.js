@@ -80,8 +80,8 @@ return arr.map(r => ({ ...r, score: r.mugs2 + r.hosps + r.money/1e6, pct: max? (
 }
 
 function createUI() {
-document.getElementById('rev-panel')?.remove();
-document.getElementById('rev-toggle')?.remove();
+var oldPanel = document.getElementById('rev-panel'); if (oldPanel) oldPanel.remove();
+var oldToggle = document.getElementById('rev-toggle'); if (oldToggle) oldToggle.remove();
 const data = buildScoreList();
 const panel = document.createElement('div'); panel.id='rev-panel';
 Object.assign(panel.style, { position:'fixed', right:'20px', top:isMobile?'auto':'60px', bottom:isMobile?'80px':'auto', width:isMobile?'200px':'260px', background:'#222', color:'#ddd', padding:'8px', borderRadius:'6px', zIndex:99999, fontSize:'12px', fontFamily:'Arial', overflowY:isMobile?'auto':'visible', maxHeight:isMobile?'40%':'none' });
@@ -95,3 +95,4 @@ if(isMobile) { const btn=document.createElement('button'); btn.id='rev-toggle'; 
 
 window.addEventListener('load',()=>{ fetchAttackLogs(); createUI(); });
 })();
+
