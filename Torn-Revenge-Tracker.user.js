@@ -12,8 +12,8 @@
 // @match        https://m.torn.com/*
 // @grant        GM_xmlhttpRequest
 // @run-at       document-idle
-// @updateURL    https://raw.githubusercontent.com/YourUsername/Torn-Revenge-Tracker/main/Torn-Revenge-Tracker.user.js
-// @downloadURL  https://raw.githubusercontent.com/YourUsername/Torn-Revenge-Tracker/main/Torn-Revenge-Tracker.user.js
+// @updateURL    https://raw.githubusercontent.com/Oddmeister/Torn-Revenge-Tracker/main/Torn-Revenge-Tracker.user.js
+// @downloadURL  https://raw.githubusercontent.com/Oddmeister/Torn-Revenge-Tracker/main/Torn-Revenge-Tracker.user.js
 // ==/UserScript==
 
 (function(global) {
