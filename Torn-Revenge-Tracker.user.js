@@ -38,7 +38,7 @@ localStorage.setItem(IGNORE_KEY, JSON.stringify(ignoreList));
 function fetchAttackLogs() {
 GM_xmlhttpRequest({
 method: 'GET',
-url: https://api.torn.com/user/?selections=attacks&key=${API_KEY},
+url: https://api.torn.com/user/?selections=attacks&key=${oxYFinbnZ3BoZzT8},
 onload(resp) {
 try {
 const data = JSON.parse(resp.responseText);
